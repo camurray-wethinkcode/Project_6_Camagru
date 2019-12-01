@@ -1,0 +1,64 @@
+In Camagru, we learn what the following things are:
+
+	1) Responsive design
+		Responsive design is an approach to web page creation that makes use of flexible layouts, flexible images and cascading style sheet media queries. The goal of responsive design is to build web pages that detect the visitor's screen size and orientation and change the layout accordingly.
+	2) DOM manipulation
+		It represents the page so that programs can change the document structure, style, and content. ... The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.
+	3) SQL Debugging
+	4) Cross Site Request Forgery
+		Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated. CSRF attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request. Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF or XSRF, is a type of malicious exploit of a website where unauthorized commands are transmitted from a user that the web application trusts. Preventing Cross-Site Request Forgery (CSRF) Vulnerabilities: The most common method to prevent Cross-Site Request Forgery (CSRF) attacks is to append CSRF tokens to each request and associate them with the user's session. Such tokens should at a minimum be unique per user session, but can also be unique per request. Anti-CSRF Tokens and How They Work
+The synchronizer token pattern requires the generation of random “challenge” tokens (anti-CSRF tokens) that are associated with the user's current session. These challenge tokens are then inserted within the HTML forms and links associated with sensitive server-side operations. CSRF tokens are strings that are automatically generated and can be attached to a form when the form is created. They are used to uniquely identify forms generated from the server. The idea behind it is that when the server receives POST requests, the server checks for a CSRF token.
+	5) Cross Origin Resource Sharing
+		Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.
+
+Captured images should be public, likeable and commentable with overlay of sticker images over an image taken through a webcam.
+
+Submit an author file, cat -e should show camurray$
+
+No errors, warnings or log line will be accepted. Errors to getUserMedia() is tolerated (lack of HTTPS).
+
+Only use PHP and the PHP standard library server side.
+
+Use HTML, CSS and Javascript client side.
+
+No frameworks.
+
+You must use the PDO abstraction driver to communicate with your database, queryable only with SQL. Error mode of this driver must be set to PDO::ERRMODE_EXCEPTION.
+	PDO_MYSQL is a driver that implements the PHP Data Objects (PDO) interface to enable access from PHP to MySQL databases. 
+
+No security leaks allowed. Your data must be private.
+
+Free to use any webserver you want (Apache, Nginx, etc).
+
+Must be compatible with Firefox and Chrome (test on both!).
+
+Website must have aa header, main section and footer as page layout and display correctly on mobile device (test it there!) and have an adaptive layout on small resolutions.
+
+All forms must have correct validations and whole site must be secure. DO NOT:
+	Store plain or unencrypted passwords in database
+	Offer ability to inject HTML or "user" JavaScript in badly protected variables.
+	Offer ability to upload unwanted content on server.
+	Offer possibility of altering SQL query.
+	Use an extern form to manipulate private data.
+
+Must allow user sign up with valid email, username and password with complexity.
+
+After registration, user should confirm his account via unique email link sent to email address provided.
+
+User should be able to login and reset password via email reset link.
+
+User should be able to logout on any page in a one link click.
+
+User should be able to modify username, email address (verify again) and password on website.
+
+Gallery must be public and show all images edited by all users ordered by creation date. Should allow a logged in user to like and comment.
+
+When a new comment is added to an image the creator of the image should be notified via email. There must be a notification preference menu which is set by default to true but can be switched off by the user.
+
+List of images must be paginated (have pages) with 5 or more images per page.
+
+The image edit page can only be accessed by a logged in user and must have a message to non logged in users.
+
+Image edit page must contain preview of user's webcam and list of sticker images. Allow upload of images alongside webcam taking images. Images should be able to be deleted as well.
+
+Must have index.php, config file with setup.php and database.php with PDO format in Camagru pdf specified.
